@@ -1,0 +1,292 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: local("OpenSans-Regular"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Bold"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Light"),
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local('OpenSans-Medium'),
+    url("../fonts/OpenSans-Medium.woff2") format("woff2"),
+    url("../fonts/OpenSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local('OpenSans-SemiBold'),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+/* global */
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.btn-reset {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.index-h4 {
+  margin: 0;
+}
+
+/* header */
+
+/* top */
+
+.header-top {
+  padding: 0 20px;
+  background-color: #069EDB;
+}
+
+.header-top-adress {
+  justify-content: space-between;
+}
+
+.header-top-link {
+  background-image: url(../img/tnb_call.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 19px 19px;
+  padding-left: 25px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: #fff;
+}
+
+.header-top-paragraph {
+  align-self: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #fff;
+}
+
+/* bottom */
+
+.header-bottom-container {
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.header-logo-img {
+  width: 197px;
+  height: 110px;
+}
+
+.nav-item {
+  padding-top: 4px;
+}
+
+.nav-item-bg-info {
+  background-image: url(../img/nav-info.png);
+}
+
+.nav-item-bg-services {
+  background-image: url(../img/nav-services.svg);
+}
+
+.nav-item-bg-patients {
+  background-image: url(../img/nav-patients.svg);
+}
+
+.nav-item-bg-reviews {
+  background-image: url(../img/nav-reviews.svg);
+}
+
+.nav-item-bg-contacts {
+  background-image: url(../img/nav-contacts.svg);
+}
+
+.nav-item-link {
+  display: inline-block;
+  min-width: 140px;
+  padding-top: 80px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+/* hero */
+
+.hero {
+  margin-bottom: 70px;
+}
+
+.hero-container {
+  width: 100%;
+  height: 640px;
+  background-image: url(../img/hero-bg.jpg);
+  padding-top: 240px;
+  text-align: center;
+}
+
+.index-title {
+  display: inline-block;
+  width: 790px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.hero-paragraph {
+  display: inline-block;
+  width: 655px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+/* guarantees */
+
+/* top */
+
+.guarantees {
+  margin-bottom: 70px;
+}
+
+.guarantees-list {
+  padding: 0 53px;
+  margin-bottom: 70px;
+}
+
+.guarantees-item-bg1 {
+  background-image: url(../img/guarantees-1.png);
+}
+
+.guarantees-item-bg2 {
+  background-image: url(../img/guarantees-2.png);
+}
+
+.guarantees-item-bg3 {
+  background-image: url(../img/guarantees-3.png);
+}
+
+.guarantees-item-bg4 {
+  background-image: url(../img/guarantees-4.png);
+}
+
+.guarantees-item {
+  padding: 120px 30px 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.guarantees-item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+/* bottom */
+
+.guarantees-grey-area {
+  border-radius: 25px;
+  padding: 42px 26px 35px 30px;
+  background-color: #F4F4F4;
+  justify-content: space-between;
+}
+
+.grey-area-content {
+  max-width: 47%;
+}
+
+.grey-area-paragraph {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.grey-area-paragraph:first-child {
+  margin-bottom: 30px;
+}
+
+.grey-area-img {
+  border-radius: 25px;
+}
