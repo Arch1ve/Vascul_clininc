@@ -105,6 +105,10 @@ p {
   margin: 0 auto;
 }
 
+.index-h3 {
+  margin: 0;
+}
+
 .index-h4 {
   margin: 0;
 }
@@ -485,6 +489,7 @@ p {
 }
 
 .services-subtitle {
+  margin-bottom: 55px;
   font-weight: 500;
   font-size: 40px;
   line-height: 48px;
@@ -494,8 +499,11 @@ p {
 
 .services-list {
   width: 1290px;
-  margin-bottom: 55px;
   align-self: center;
+}
+
+.services-list:first-of-type {
+  margin-bottom: 65px;
 }
 
 .services-item {
@@ -511,7 +519,7 @@ p {
   margin-right: 30px;
 }
 
-.services-item:nth-child(-n+4) {
+.services-list:last-of-type .services-item:nth-child(-n+4) {
   margin-bottom: 40px;
 }
 
@@ -543,3 +551,47 @@ p {
 .consult {
   margin-bottom: 70px;
 }
+
+.consult-container {
+  min-height: 620px;
+  padding: 160px 60px 0 458px;
+  flex-direction: column;
+  background-image: url(../img/consult-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.consult-title {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #069EDB;
+}
+
+.consult-summary {
+  width: 400px;
+  margin-bottom: 35px;
+  flex-direction: column;
+}
+
+.consult-descr {
+  padding-bottom: 13px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #D4D4D4;
+  flex-direction: column;
+}
+
+.consult-descr-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.consult-price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  align-self: flex-end;
+}
+
