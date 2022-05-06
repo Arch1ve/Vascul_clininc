@@ -95,6 +95,10 @@ p {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -105,9 +109,32 @@ p {
   margin: 0;
 }
 
-/* header */
+.section-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: #069EDB;
+  text-align: center;
+}
 
-/* top */
+.index-link {
+  padding: 9px 45px;
+  border: 2px solid #069EDB;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(12, 134, 183, 0.9);
+}
+
+.index-link:hover {
+  background-color: #069EDB;
+  color: #fff;
+}
+
+/* header-top */
 
 .header-top {
   padding: 0 20px;
@@ -138,7 +165,12 @@ p {
   color: #fff;
 }
 
-/* bottom */
+/* header-bottom */
+
+.header-bottom {
+  background-color: #fff;
+  border-bottom: 1px solid #eee
+}
 
 .header-bottom-container {
   justify-content: space-between;
@@ -184,6 +216,12 @@ p {
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
+}
+
+.sticky {
+  /* z-index: 1000; */
+  position: sticky;
+  top: 0;
 }
 
 /* hero */
@@ -289,4 +327,219 @@ p {
 
 .grey-area-img {
   border-radius: 25px;
+}
+
+/* benefits */
+
+.benefits {
+  margin-bottom: 55px;
+}
+
+.benefits-title {
+  margin-bottom: 80px;
+}
+
+.benefits-item-bg1 {
+  background-image: url(../img/benefits-1.jpg);
+}
+
+.benefits-item-bg2 {
+  background-image: url(../img/benefits-2.jpg);
+}
+
+.benefits-item-bg3 {
+  background-image: url(../img/benefits-3.jpg);
+}
+
+.benefits-item-bg4 {
+  background-image: url(../img/benefits-4.jpg);
+}
+
+.benefits-item-bg5 {
+  background-image: url(../img/benefits-5.jpg);
+}
+
+.benefits-item {
+  display: flex;
+  width: 25%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefits-item-title {
+  align-self: center;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* specialists */
+
+.specialists {
+  margin-bottom: 70px;
+}
+
+.specialists-title {
+  margin-bottom: 60px;
+}
+
+.specialists-garants {
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.spesialists-garants-item-bg-1 {
+  background-image: url(../img/specialists-garants-1.svg);
+}
+
+.spesialists-garants-item-bg-2 {
+  background-image: url(../img/specialists-garants-2.svg);
+}
+
+.specialists-garants-item {
+  width: 300px;
+  padding: 130px 6px 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.specialists-garants-item:first-child {
+  margin-right: 100px;
+}
+
+.specialists-garants-item-paragraph {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.specialists-list {
+  justify-content: center;
+}
+
+.specialists-item {
+  width: 330px;
+  min-height: 430px;
+  padding: 17px 15px 22px;
+  border: 1px solid #D4D4D4;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.specialists-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.specialists-item:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.specialists-item-image {
+  width: 220px;
+  height: 220px;
+  margin-bottom: 19px;
+  align-self: center;
+}
+
+.specialists-item-name {
+  margin-bottom: 19px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.specialists-item-descr {
+  margin-bottom: 29px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.specialists-item-link {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* services */
+
+.services {
+  margin-bottom: 80px;
+}
+
+.services-container {
+  flex-direction: column;
+}
+
+.services-title {
+  margin-bottom: 55px;
+}
+
+.services-subtitle {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #069EDB;
+}
+
+.services-list {
+  width: 1290px;
+  margin-bottom: 55px;
+  align-self: center;
+}
+
+.services-item {
+  padding-bottom: 22px;
+  width: 300px;
+  min-height: 350px;
+  border: 1px solid #D4D4D4;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.services-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.services-item:nth-child(-n+4) {
+  margin-bottom: 40px;
+}
+
+.services-item:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.services-item-image {
+  border-radius: 19px 19px 0 0;
+  margin-bottom: 22px;
+}
+
+.services-item-paragraph {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.services-item-link {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* consult */
+
+.consult {
+  margin-bottom: 70px;
 }
