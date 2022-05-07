@@ -212,19 +212,110 @@
           </div>
           <p class="index-paragraph consult-price">2500&nbsp;₽</p>
         </div>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="consult-form flex">
+          <div class="consult-submit-area flex">
+            <input id="phone-number" type="tel" name="tel" maxlength="50"  autofocus="autofocus" required="required"
+            value="+7(___)___-__-__"
+            pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+            placeholder="+7(___)___-__-__" class="consult-submit-area-input">
+            <button type="submit" class="btn-reset consult-submit-area-btn">Записаться</button>
+          </div>
+          <p class="index-paragraph consult-form-paragraph">Администратор клиники перезвонит в&nbsp;течении 15&nbsp;минут, чтобы согласовать дату и&nbsp;время приема, а&nbsp;также узнать подробнее о&nbsp;Вашей проблеме</p>
+          <div class="consult-form-checkbox-area flex">
+            <input type="checkbox" name="privacy" id="privacy-checkbox" required class="consult-form-checkbox">
+            <p class="index-paragraph consult-form-checkbox-descr">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;</p>
+            <a href="https://vasculclinic.ru/politika-konfidentsialnosti/" class="privacy-link">Политикой конфиденциальности</a>
+          </div>
+        </form>
       </div>
-      <form action="https://jsonplaceholder.typicode.com/todos/1" method="post" class="consult-form flex">
-        <div class="consult-submit-area">
-          <!-- тут будет поле ввода -->
-          <button type="submit" class="btn-reset consult-submit-area-btn"></button>
+      <script type="text/javascript">
+        function setCursorPosition(pos, e) {
+          e.focus();
+          if (e.setSelectionRange) e.setSelectionRange(pos, pos);
+          else if (e.createTextRange) {
+            var range = e.createTextRange();
+            range.collapse(true);
+            range.moveEnd("character", pos);
+            range.moveStart("character", pos);
+            range.select()
+          }
+        }
+        function mask(e) {
+          var matrix = this.placeholder,
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, "");
+          def.length >= val.length && (val = def);
+          matrix = matrix.replace(/[_\d]/g, function(a) {
+            return val.charAt(i++) || "_"
+          });
+          this.value = matrix;
+          i = matrix.lastIndexOf(val.substr(-1));
+          i < matrix.length && matrix != this.placeholder ? i++ : i = matrix.indexOf("_");
+          setCursorPosition(i, this)
+        }
+        window.addEventListener("DOMContentLoaded", function() {
+          var input = document.querySelector("#phone-number");
+          input.addEventListener("input", mask, false);
+          input.focus();
+          setCursorPosition(3, input);
+        });
+      </script>
+    </section>
+    <section class="faq">
+      <div class="container faq-container flex">
+        <h2 class="section-title faq-title">FAQ</h2>
+        <button onclick="viewDiv1()" class="btn-reset faq-btn">Чем опасен варикоз нижних конечностей?</button>
+        <div class="faq-hidden-block" id="faq1">
+          <p class="index-paragraph faq-paragraph">Наиболее грозным осложнением варикозной болезни является тромбоз вен. Он&nbsp;может возникать как в&nbsp;поверхностных, подкожных венах, так и&nbsp;в&nbsp;глубоких. Связано это с&nbsp;патологическим изменением гемодинамики в&nbsp;расширенных венах, воспалением сосудистой стенки и&nbsp;рядом других факторов. Тромбы могут переходить на&nbsp;глубокие вены&nbsp;и, далее, попадать с&nbsp;током крови в&nbsp;легочные артерии, вызывая тромбоэмболию ТЭЛА). Иногда это может закончиться летально.</p>
         </div>
-        <p class="index-paragraph consult-form-paragraph">Администратор клиники перезвонит в&nbsp;течении 15&nbsp;минут, чтобы согласовать дату и&nbsp;время приема, а&nbsp;также узнать подробнее о&nbsp;Вашей проблеме</p>
-
-      </form>
+        <button onclick="viewDiv2()" class="btn-reset faq-btn">Как лечить варикоз на ногах у женщин?</button>
+        <div class="faq-hidden-block" id="faq2">
+          <p class="index-paragraph faq-paragraph">Независимо от&nbsp;степени проявления варикоза, нужно обращаться к&nbsp;врачу хирургу- флебологу. Самолечение может привести к&nbsp;нежелательным последствиям. Врач проведет обследование, самостоятельно сделает УЗИ вен&nbsp;&mdash; УЗДС нижних конечностей, после чего назначит индивидуальное лечение. Это может быть фармакологическая коррекция, либо малоинвазивная хирургическая манипуляция&nbsp;&mdash; ЭВЛО. Мужчины страдают варикозом не&nbsp;реже, поэтому диагностика и&nbsp;лечение аналогичные.</p>
+        </div>
+        <button onclick="viewDiv3()" class="btn-reset faq-btn">Как укрепить сосуды при предрасположенности к варикозному расширению вен?</button>
+        <div class="faq-hidden-block" id="faq3">
+          <p class="index-paragraph faq-paragraph">Для профилактики развития варикозной болезни необходимо избегать таких провоцирующих факторов, как избыточный вес (ожирение), длительное статичное положение (сидеть или стоять), чрезмерное увлечение термическими процедурами (бани, горячие ванны), тяжелые физические нагрузки. Также, следует сбалансировано питаться, чтобы исключить запоры, вести активный образ жизни, больше двигаться. Если варикозная болезнь все&nbsp;же развилась, то&nbsp;лечить ее&nbsp;можно только хирургически!</p>
+        </div>
+        <button onclick="viewDiv4()" class="btn-reset faq-btn">Какие могут быть последствия если не лечить варикоз на ногах?</button>
+        <div class="faq-hidden-block" id="faq4">
+          <p class="index-paragraph faq-paragraph">Помимо тромбоза вен существуют также другие неприятные осложнения варикозной болезни, которые возникают довольно часто. Это трофические изменения, венозная экзема&nbsp;и, как крайнее проявление, трофические язвы нижних конечностей. Качество жизни пациента, при этом, существенно страдает, а&nbsp;лечить венозную язву приходится долго и&nbsp;хлопотно.</p>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
-
+    <div class="header-top">
+      <div class="container">
+        <address class="header-top-adress flex">
+          <a href="tel:+78004445354" class="link header-top-link">+7 800 444-53-54</a>
+          <p class="index-paragraph header-top-paragraph">Работаем: ПН&nbsp;&mdash; СБ, с&nbsp;8&nbsp;до&nbsp;20; СБ&nbsp;с&nbsp;9&nbsp;до&nbsp;15</p>
+        </address>
+      </div>
+    </div>
+    <div class="container footer-area">
+      <div class="footer-area-links flex">
+        <a href="#" class="header-logo-link footer-logo">
+          <img class="header-logo-img" src="img/logo.png" alt="Логотип Vascul clinic">
+        </a>
+        <ul class="list-reset footer-area-list flex">
+          <li class="footer-area-item">
+            <a href="#" class="footer-link">База знаний</a>
+          </li>
+          <li class="footer-area-item">
+            <a href="#" class="footer-link">Вакансии</a>
+          </li>
+          <li class="footer-area-item">
+            <a href="#" class="footer-link">Контакты</a>
+          </li>
+          <li class="footer-area-item">
+            <a href="#" class="footer-link">Документы</a>
+          </li>
+        </ul>
+      </div>
+      <p class="index-paragraph footer-paragraph">Лицензия: ЛО-50-01-012769 от&nbsp;27.07.2021&nbsp;ОГРН 1205000086081&nbsp;ИНН 5007111252&nbsp;КПП 500701001</p>
+    </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

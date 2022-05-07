@@ -76,6 +76,13 @@ p {
   margin: 0;
 }
 
+input[type="tel"] {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
 /* global */
 
 .list-reset {
@@ -87,6 +94,7 @@ p {
 
 .btn-reset {
   padding: 0;
+  border: none;
   background-color: transparent;
   cursor: pointer;
 }
@@ -554,7 +562,7 @@ p {
 
 .consult-container {
   min-height: 620px;
-  padding: 160px 60px 0 458px;
+  padding: 90px 60px 0 458px;
   flex-direction: column;
   background-image: url(../img/consult-bg.jpg);
   background-repeat: no-repeat;
@@ -595,3 +603,148 @@ p {
   align-self: flex-end;
 }
 
+.consult-form {
+  flex-direction: column;
+}
+
+.consult-submit-area {
+  margin-bottom: 15px;
+}
+
+.consult-submit-area-input {
+  width: 25%;
+  padding: 10px;
+  border: 1px solid #9E9E9E;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.consult-submit-area-btn {
+  width: 136px;
+  padding: 10px 16px;
+  border: 2px solid #069EDB;
+  border-radius: 5px;
+  margin-left: 20px;
+  color: rgba(12, 134, 183, 0.9);
+}
+
+.consult-form-paragraph {
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.consult-form-checkbox {
+  margin-right: 6px;
+}
+
+.consult-form-checkbox-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.privacy-link {
+  color: #069EDB;
+}
+
+/* faq */
+
+.faq {
+  margin-bottom: 70px;
+}
+
+.faq-container {
+  flex-direction: column;
+}
+
+.faq-btn {
+  padding: 15px 10px;
+  border-bottom: 2px solid #D4D4D4;
+  margin-bottom: 10px;
+  background-image: url(../img/faq-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #069EDB;
+}
+
+
+.faq-paragraph {
+  padding-left: 10px;
+  padding-right: 150px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.faq-title {
+  margin-bottom: 55px;
+}
+
+#faq1 {
+  display: none;
+}
+
+#faq2 {
+  display: none;
+}
+
+#faq3 {
+  display: none;
+}
+
+#faq4 {
+  display: none;
+}
+
+/* footer */
+
+.footer {
+  height: 315px;
+  background-color: #069EDB;
+}
+
+.footer-area {
+  padding-top: 5px;
+  padding-left: 28px;
+  padding-bottom: 14px;
+  background-color: #fff;
+}
+
+.footer-logo {
+  margin-right: 225px;
+}
+
+.footer-area-list {
+  align-self: center;
+}
+
+.footer-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #069EDB;
+}
+
+.footer-area-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-paragraph {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
