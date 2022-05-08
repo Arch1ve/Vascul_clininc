@@ -15,6 +15,7 @@ a {
 
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 
 @font-face {
@@ -236,6 +237,17 @@ input[type="tel"] {
   top: 0;
 }
 
+.main-title {
+  display: inline-block;
+  width: 790px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+}
+
 /* hero */
 
 .hero {
@@ -248,17 +260,6 @@ input[type="tel"] {
   background-image: url(../img/hero-bg.jpg);
   padding-top: 240px;
   text-align: center;
-}
-
-.index-title {
-  display: inline-block;
-  width: 790px;
-  margin: 0;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 77px;
 }
 
 .hero-paragraph {
@@ -541,6 +542,7 @@ input[type="tel"] {
 }
 
 .services-item-paragraph {
+  padding: 0 5px;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 18px;
@@ -684,8 +686,8 @@ input[type="tel"] {
   padding-left: 10px;
   padding-right: 150px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 24px;
   color: rgba(18, 18, 18, 0.9);
 }
 
@@ -712,14 +714,17 @@ input[type="tel"] {
 /* footer */
 
 .footer {
-  height: 315px;
+  height: 250px;
+  padding-top: 10px;
   background-color: #069EDB;
 }
 
+.bottom-contacts {
+  margin-bottom: 10px;
+}
+
 .footer-area {
-  padding-top: 5px;
-  padding-left: 28px;
-  padding-bottom: 14px;
+  padding: 5px 15px 14px 28px;
   background-color: #fff;
 }
 
@@ -728,6 +733,7 @@ input[type="tel"] {
 }
 
 .footer-area-list {
+  margin-left: auto;
   align-self: center;
 }
 
@@ -747,4 +753,125 @@ input[type="tel"] {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+}
+
+
+/* -----------contacts----------- */
+
+/* hero */
+
+.contacts-hero {
+  margin-bottom: 90px;
+}
+
+.contacts-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  color: #069EDB;
+}
+
+.contacts-hero-content-decr {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.contacts-hero-content-list {
+  flex-direction: column;
+}
+
+.contacts-hero-content-item {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 50px;
+  color: #069EDB;
+}
+
+/* adress */
+
+.contacts-adress-title {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contacts-adress-content {
+  margin-bottom: 40px;
+}
+
+.contacts-adress-content:last-of-type {
+  margin-bottom: 90px;
+}
+
+.contacts-adress-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.contacts-adress-paragraph:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts-adress-link {
+  text-decoration: underline;
+  color: #069EDB;
+}
+
+/* -----------info----------- */
+
+/* hero */
+
+.info-hero {
+  margin-bottom: 90px;
+}
+
+.info-hero-container {
+  flex-direction: column;
+}
+
+.info-main-title {
+  margin: 55px 0 30px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 64px;
+  color: #069EDB;
+  text-align: center;
+}
+
+.info-hero-paragraph {
+  align-self: center;
+  padding: 0 120px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+/* symptoms */
+
+.info-symptoms {
+  margin-bottom: 70px;
+  flex-direction: column;
+}
+
+.info-symptoms-title {
+  margin-bottom: 55px;
+}
+
+.info-symptoms-h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(18, 18, 18, 0.9);
 }
