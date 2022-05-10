@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Услуги Vascul clinic</title>
+</head>
+<body>
+  <div class="header-top">
+    <div class="container">
+      <address class="header-top-adress flex">
+        <a href="tel:+78004445354" class="link header-top-link">+7 800 444-53-54</a>
+        <p class="index-paragraph header-top-paragraph">Работаем: ПН&nbsp;&mdash; СБ, с&nbsp;8&nbsp;до&nbsp;20; СБ&nbsp;с&nbsp;9&nbsp;до&nbsp;15</p>
+      </address>
+    </div>
+  </div>
+  <header class="header sticky">
+    <div class="header-bottom">
+      <div class="container header-bottom-container flex">
+        <a href="index.html" class="header-logo-link">
+          <img class="header-logo-img" src="img/logo.png" alt="Логотип Vascul clinic">
+        </a>
+        <nav class="nav">
+          <ul class="nav-list list-reset flex">
+            <li class="nav-item">
+              <a href="https://vasculclinic.ru/" class="nav-item-link nav-item-bg-info">
+                О&nbsp;нашей клинике
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="price.html" class="nav-item-link nav-item-bg-services">
+                Наши услуги
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="info.html" class="nav-item-link nav-item-bg-patients">
+                Для пациентов
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="reviews.html" class="nav-item-link nav-item-bg-reviews">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contacts.html" class="nav-item-link nav-item-bg-contacts">
+                Наши контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="reviews">
+      <div class="container reviews-container">
+
+      </div>
+    </section>
+    <section class="consult">
+      <div class="container consult-container flex">
+        <h3 class="index-h3 consult-title">Если вы&nbsp;столкнулись с&nbsp;одним или несколькими симптомами, пора обратиться за&nbsp;помощью к&nbsp;опытным специалистам нашей клиники</h3>
+        <div class="consult-summary flex">
+          <div class="consult-descr flex">
+            <p class="index-paragraph consult-descr-text">Первичная консультация хирурга-флеболога</p>
+            <p class="index-paragraph consult-descr-text">+ Протокол УЗИ-вен</p>
+            <p class="index-paragraph consult-descr-text">+ План лечения</p>
+          </div>
+          <p class="index-paragraph consult-price">2500&nbsp;₽</p>
+        </div>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="consult-form flex">
+          <div class="consult-submit-area flex">
+            <input id="phone-number" type="tel" name="tel" maxlength="50" required="required"
+            value="+7(___)___-__-__"
+            pattern="\+7\s?[\(]{0,1}[0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+            placeholder="+7(___)___-__-__" class="consult-submit-area-input">
+            <button type="submit" class="btn-reset consult-submit-area-btn">Записаться</button>
+          </div>
+          <p class="index-paragraph consult-form-paragraph">Администратор клиники перезвонит в&nbsp;течении 15&nbsp;минут, чтобы согласовать дату и&nbsp;время приема, а&nbsp;также узнать подробнее о&nbsp;Вашей проблеме</p>
+          <div class="consult-form-checkbox-area flex">
+            <input type="checkbox" name="privacy" id="privacy-checkbox" required class="consult-form-checkbox">
+            <p class="index-paragraph consult-form-checkbox-descr">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с&nbsp;</p>
+            <a href="https://vasculclinic.ru/politika-konfidentsialnosti/" class="privacy-link">Политикой конфиденциальности</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container faq-container">
+        <h2 class="section-title faq-title">FAQ</h2>
+        <div class="faq-area flex">
+          <button class="btn-reset faq-btn" id="faq-1">Как узнать есть ли варикозное расширение вен?</button>
+          <div class="faq-hidden-block" id="opener-faq-1">
+            <p class="index-paragraph faq-paragraph">Заболевание развивается в&nbsp;течение длительного периода. Первыми признаками варикозного расширения вен могут быть: чувство тяжести и&nbsp;боль в&nbsp;ногах, сосудистые звездочки, отеки, связанные с&nbsp;давлением крови на&nbsp;сосуды и&nbsp;ткани, частые судороги и&nbsp;онемение ног, повышенная утомляемость, шишки и&nbsp;бугры синеватого цвета. Со&nbsp;временем вены заметно проступают и&nbsp;образуют узлы, появляются трофические язвы. Варикоз гораздо легче вылечить на&nbsp;начальном этапе, поэтому нужно сразу обратиться к&nbsp;врачу.</p>
+          </div>
+          <button class="btn-reset faq-btn" id="faq-2">Можно ли полностью избавиться от варикоза?</button>
+          <div class="faq-hidden-block" id="opener-faq-2">
+            <p class="index-paragraph faq-paragraph">Болезнь относится к&nbsp;хроническим. Убрать ее&nbsp;симптомы помогают разные методы и&nbsp;препараты, однако если у&nbsp;пациента уже есть венозные &laquo;узлы&raquo;, значит, сосудистая стенка изменена необратимо и&nbsp;ничего, не&nbsp;сможет их&nbsp;изменить. В&nbsp;таком случает назначается хирургическое лечение. Лучшее, чего удается достичь,&nbsp;&mdash; сдержать дальнейшее развитие нарушения и&nbsp;избежать появления осложнений (трофических язв, состояний, которые могут привести к&nbsp;инвалидности и&nbsp;даже летальному исходу). На&nbsp;сегодня популярными стали такие методы: склеротерапия, лазер, физиотерапия, гирудотерапия, медикаментозное лечение.</p>
+          </div>
+          <button class="btn-reset faq-btn" id="faq-3">Можно ли вылечить варикоз на ранней стадии?</button>
+          <div class="faq-hidden-block" id="opener-faq-3">
+            <p class="index-paragraph faq-paragraph">Чтобы подтвердить диагноз варикоз первой степени, нужно обязательно обратиться в&nbsp;медицинское учреждение, где специалист назначит необходимые обследования. Врач уточнит все проявления, беспокоящие пациента, выяснит симптомы и&nbsp;назначит анализы, обследование. Достаточно действенным способом является медикаментозное лечение варикоза на&nbsp;ранних стадиях. Назначаются лекарственные препараты, компрессы, мази, массаж, а&nbsp;также режим питания и&nbsp;правильный образ жизни при варикозе. Это поможет остановить развитие болезни еще на&nbsp;начальной стадии.</p>
+          </div>
+          <button class="btn-reset faq-btn" id="faq-4">Как можно остановить развитие варикоза?</button>
+          <div class="faq-hidden-block" id="opener-faq-4">
+            <p class="index-paragraph faq-paragraph">Профилактика варикоза включает в&nbsp;себя целый комплекс мер и&nbsp;рекомендаций. Чтобы остановить варикоз и&nbsp;избежать прогрессирования болезни необходимо медикаментозное лечение, физиопроцедуры и&nbsp;немедикаментозная терапия. Также назначается ношение компрессионного трикотажа, контроль массы тела и&nbsp;спортивный образ жизни.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="header-top bottom-contacts">
+      <div class="container">
+        <address class="header-top-adress flex">
+          <a href="tel:+78004445354" class="link header-top-link">+7 800 444-53-54</a>
+          <p class="index-paragraph header-top-paragraph">Работаем: ПН&nbsp;&mdash; СБ, с&nbsp;8&nbsp;до&nbsp;20; СБ&nbsp;с&nbsp;9&nbsp;до&nbsp;15</p>
+        </address>
+      </div>
+    </div>
+    <div class="container footer-area">
+      <div class="footer-area-links flex">
+        <a href="#" class="header-logo-link footer-logo">
+          <img class="header-logo-img" src="img/logo.png" alt="Логотип Vascul clinic">
+        </a>
+        <ul class="list-reset footer-area-list flex">
+          <li class="footer-area-item">
+            <a href="https://vasculclinic.ru/baza-znanij/" class="footer-link">База знаний</a>
+          </li>
+          <li class="footer-area-item">
+            <a href="https://vasculclinic.ru/vakansii/" class="footer-link">Вакансии</a>
+          </li>
+          <li class="footer-area-item">
+            <a href="https://vasculclinic.ru/dokumenty/" class="footer-link">Документы</a>
+          </li>
+        </ul>
+      </div>
+      <p class="index-paragraph footer-paragraph">Лицензия: ЛО-50-01-012769 от&nbsp;27.07.2021&nbsp;ОГРН 1205000086081&nbsp;ИНН 5007111252&nbsp;КПП 500701001</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

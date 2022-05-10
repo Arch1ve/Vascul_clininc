@@ -662,7 +662,7 @@ input[type="tel"] {
   margin-bottom: 70px;
 }
 
-.faq-container {
+.faq-area {
   flex-direction: column;
 }
 
@@ -695,19 +695,7 @@ input[type="tel"] {
   margin-bottom: 55px;
 }
 
-#faq1 {
-  display: none;
-}
-
-#faq2 {
-  display: none;
-}
-
-#faq3 {
-  display: none;
-}
-
-#faq4 {
+.faq-hidden-block {
   display: none;
 }
 
@@ -847,10 +835,11 @@ input[type="tel"] {
 
 .info-hero-paragraph {
   align-self: center;
-  padding: 0 120px;
+  text-align: center;
+  padding: 0 100px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 26px;
   color: rgba(18, 18, 18, 0.9);
 }
 
@@ -858,20 +847,150 @@ input[type="tel"] {
 
 .info-symptoms {
   margin-bottom: 70px;
-  flex-direction: column;
 }
 
 .info-symptoms-title {
   margin-bottom: 55px;
 }
 
-.info-symptoms-h4 {
+.info-symptoms-list {
+  justify-content: center;
+}
+
+.info-symptoms-item {
+  border: 1px solid #D4D4D4;
+  border-radius: 20px;
+}
+
+.info-symptoms-item:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.info-symptoms-item:hover .link-immitator {
+  background-color: #069EDB;
+  color: #fff;
+}
+
+.info-symptoms-item:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.info-symptoms-item:not(:nth-last-of-type(-n + 2)) {
+  margin-bottom: 30px;
+}
+
+.info-symptoms-item-link {
+  flex-direction: column;
+  width: 500px;
+  min-height: 250px;
+  padding: 20px 20px 30px;
+}
+
+.info-symptoms-item-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0 5px;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   color: rgba(18, 18, 18, 0.9);
+}
+
+.info-symptoms-item-paragraph {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.link-immitator {
+  align-self: center;
+  padding: 9px 45px;
+  border: 2px solid #069EDB;
+  border-radius: 50px;
+  margin-top: auto;
+  color: rgba(12, 134, 183, 0.9);
+  text-align: center;
+}
+
+.link-immitator-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* -----------price----------- */
+
+/* price-services */
+
+.price-services {
+  margin-bottom: 120px;
+}
+
+.price-services-title {
+  margin: 55px 0 90px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 64px;
+  color: #069EDB;
+}
+
+.diagnostics {
+  margin-bottom: 90px;
+}
+
+.diagnostics-title {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.price-services-title-link {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #069EDB;
+  text-decoration: underline;
+}
+
+.price-services-subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.price-services-area-list {
+  flex-direction: column;
+}
+
+.price-services-area-list:not(:last-of-type) {
+  margin-bottom: 45px;
+}
+
+.price-services-area-item {
+  justify-content: space-between;
+}
+
+.price-services-area-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-services-paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.price-services-area-item-right {
+  width: 250px;
+  justify-content: space-between;
+}
+
+.price-services-area-item-link {
+  color: #069EDB;
+  text-decoration: underline;
 }
