@@ -1,21 +1,29 @@
 "use strict"
 
-// faq openers
+// specialists opener
 
-let faqDict = {"opener-faq-1" : false, "opener-faq-2" : false, "opener-faq-3" : false, "opener-faq-4" : false};
-
-document.querySelector('.faq-area').addEventListener('click', function(e) {
+document.querySelector('.specialists-list').addEventListener('click', function(e) {
   let id = e.target.id;
-  let targ = `opener-${id}`;
-  if (faqDict[targ] == false) {
-    document.getElementById(targ).style.display = "block";
-    faqDict[targ] = true;
+  if (id === "") {
+    return null
   } else {
-    document.getElementById(targ).style.display = "none";
-    faqDict[targ] = false;
+    let targ = `opener-${id}`;
+    document.getElementById(targ).style.display = "flex";
+    document.getElementById("bg-darken").style.display = "block";
   }
 });
 
+document.querySelector('.specialists-hidden-cards').addEventListener('click', function(e) {
+  let id = e.target.id;
+  if (id === "closer-1"  || id === "closer-2" || id === "closer-3") {
+    id = id.slice(-1);
+    let targ = `opener-specialists-${id}`;
+    document.getElementById(targ).style.display = "none"
+    document.getElementById("bg-darken").style.display = "none";
+  } else {
+    return null
+  }
+});
 
 // form validation
 
@@ -51,4 +59,20 @@ window.addEventListener("DOMContentLoaded", function() {
   input.addEventListener("input", mask, false);
 });
 
+
+// faq openers
+
+let faqDict = {"opener-faq-1" : false, "opener-faq-2" : false, "opener-faq-3" : false, "opener-faq-4" : false};
+
+document.querySelector('.faq-area').addEventListener('click', function(e) {
+  let id = e.target.id;
+  let targ = `opener-${id}`;
+  if (faqDict[targ] == false) {
+    document.getElementById(targ).style.display = "block";
+    faqDict[targ] = true;
+  } else {
+    document.getElementById(targ).style.display = "none";
+    faqDict[targ] = false;
+  }
+});
 

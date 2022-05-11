@@ -147,6 +147,10 @@ input[type="tel"] {
   color: #fff;
 }
 
+.hidden {
+  display: none;
+}
+
 /* header-top */
 
 .header-top {
@@ -484,9 +488,101 @@ input[type="tel"] {
   color: rgba(18, 18, 18, 0.9);
 }
 
-.specialists-item-link {
+.specialists-item-button {
   margin-top: auto;
   align-self: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#bg-darken {
+  display: none;
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.specialists-hidden-cards {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.specialists-opener {
+  align-self: center;
+  position: fixed;
+  z-index: 1000;
+  width: 700px;
+  height: 500px;
+  border: 1px solid #D4D4D4;
+  background-color: #fff;
+}
+
+.specialists-opener-img {
+  height: 500px;
+  margin-right: 23px;
+}
+
+.specialists-opener-right {
+  width: 400px;
+  padding: 10px 30px 40px 40px;
+  flex-direction: column;
+}
+
+.closer {
+  align-self: flex-end;
+  margin-right: -9px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.closer-cross-img {
+  width: 30px;
+}
+
+.specialists-opener-right-content {
+  overflow-y: scroll;
+  height: 400px;
+  padding-right: 10px;
+  scrollbar-color: #D4D4D4 #fff;
+  scrollbar-width: thin;
+}
+
+.specialists-opener-right-content::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff;
+}
+
+.specialists-opener-right-content::-webkit-scrollbar-thumb {
+  background-color: #D4D4D4;
+  border-radius: 5px;
+}
+
+.specialists-opener-name {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.specialists-opener-subtitle {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #069EDB;
+}
+
+.specialists-opener-paragraph {
+  font-size: 16px;
+  color: rgba(18, 18, 18, 0.9);
+}
+
+.specialists-opener-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 /* services */
@@ -687,7 +783,6 @@ input[type="tel"] {
   color: #069EDB;
 }
 
-
 .faq-paragraph {
   padding-left: 10px;
   padding-right: 150px;
@@ -699,10 +794,6 @@ input[type="tel"] {
 
 .faq-title {
   margin-bottom: 55px;
-}
-
-.faq-hidden-block {
-  display: none;
 }
 
 /* footer */
