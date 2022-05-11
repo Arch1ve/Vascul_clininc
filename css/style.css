@@ -522,12 +522,11 @@ input[type="tel"] {
 
 .specialists-opener-img {
   height: 500px;
-  margin-right: 23px;
 }
 
 .specialists-opener-right {
   width: 400px;
-  padding: 10px 30px 40px 40px;
+  padding: 10px 30px 40px 20px;
   flex-direction: column;
 }
 

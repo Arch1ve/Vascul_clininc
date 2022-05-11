@@ -10,6 +10,7 @@ document.querySelector('.specialists-list').addEventListener('click', function(e
     let targ = `opener-${id}`;
     document.getElementById(targ).style.display = "flex";
     document.getElementById("bg-darken").style.display = "block";
+    document.getElementsByTagName("body")[0].style.overflow = "hidden"
   }
 });
 
@@ -20,6 +21,7 @@ document.querySelector('.specialists-hidden-cards').addEventListener('click', fu
     let targ = `opener-specialists-${id}`;
     document.getElementById(targ).style.display = "none"
     document.getElementById("bg-darken").style.display = "none";
+    document.getElementsByTagName("body")[0].style.overflow = "visible"
   } else {
     return null
   }
